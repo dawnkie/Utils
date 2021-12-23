@@ -1,0 +1,212 @@
+#spring:
+#  datasource:
+#    username: MTL101
+#    password: My)4@0!1
+#    #?serverTimezone=UTC解决时区的报错
+#    url: jdbc:mysql://localhost:3306/auto?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+# 自动化:appium服务器、设备名、设备平台名、app包名、app启动入口、取消驱动启动时重置程序、引擎2
+appium:
+  deviceName: "127.0.0.1:5555"
+  platformName: "Android"
+  appPackage: "com.axieinfinity.origin"
+  appActivity: "com.unity3d.player.UnityPlayerActivity"
+  noReset: "true"
+  dontStopAppOnReset: "true"
+  automationName: "uiautomator2"
+  server-ip: "http://127.0.0.1:4723/wd/hub"
+
+# 文字识别
+tesseract:
+  # 识别所依赖的数据集
+  dataPath: "D://Android//tessdata"
+  # 语言
+  language: "eng"
+
+
+
+# 坐标
+axie:
+  coords:
+    "QUEST":
+      x: 520
+      y: 60
+    # 251,177,0 0xfffbb100 w100 h1
+    "isQUEST":
+      x: 160
+      y: 95
+    # 196,165,125 0xffc4a57d w100 h1
+    "isADVENTURE":
+      x: 350
+      y: 10
+    # 192,127,91 0xffc07f5b w100 h1
+    "isBATTLE":
+      x: 15
+      y: 43
+    # 0,177,203 0xff00b1cb w100 h1
+    "isHOME":
+      x: 901
+      y: 363
+    # 0xffffffff w3 h5
+    "isPlayingTime":
+      x: 1139
+      y: 504
+    "QUEST_close":
+      x: 1197
+      y: 56
+    "ADVENTURE":
+      x: 1050
+      y: 390
+    "BATTLE_END_TURN":
+      x: 1180
+      y: 510
+    "VICTORY":
+      x: 360
+      y: 360
+    "DEFEATED":
+      x: 260
+      y: 350
+    "ARENA":
+      x: 1050
+      y: 520
+    "QUEST_CheckIn":
+      x: 540
+      y: 400
+    "QUEST_Claim":
+      x: 1050
+      y: 250
+    "QUEST_adNumber":
+      x: 991
+      y: 394
+    "ADVENTURE_START":
+      x: 1000
+      y: 630
+    "ADVENTURE_swipe_L":
+      x: 160
+      y: 250
+    "ADVENTURE_swipe_R":
+      x: 900
+      y: 200
+    "ADVENTURE_tips":
+      x: 435
+      y: 310
+    "ADVENTURE_tips_OK":
+      x: 640
+      y: 435
+    "ADVENTURE_left":
+      x: 38
+      y: 220
+    "ADVENTURE_right":
+      x: 1240
+      y: 220
+    "ADVENTURE_1":
+      x: 571
+      y: 304
+    "ADVENTURE_2":
+      x: 453
+      y: 237
+    "ADVENTURE_3":
+      x: 332
+      y: 304
+    "ADVENTURE_4":
+      x: 213
+      y: 241
+    "ADVENTURE_5":
+      x: 334
+      y: 182
+    "ADVENTURE_6":
+      x: 453
+      y: 124
+    "ADVENTURE_7":
+      x: 575
+      y: 183
+    "ADVENTURE_8":
+      x: 689
+      y: 121
+    "ADVENTURE_9":
+      x: 809
+      y: 180
+    "ADVENTURE_10":
+      x: 690
+      y: 245
+    "ADVENTURE_11":
+      x: 810
+      y: 305
+    "ADVENTURE_12":
+      x: 928
+      y: 244
+    "ADVENTURE_13":
+      x: 1051
+      y: 297
+    "ADVENTURE_14":
+      x: 1167
+      y: 243
+    "ADVENTURE_15":
+      x: 1044
+      y: 180
+    "ADVENTURE_16":
+      x: 156
+      y: 123
+    "ADVENTURE_17":
+      x: 274
+      y: 183
+    "ADVENTURE_18":
+      x: 394
+      y: 124
+    "ADVENTURE_19":
+      x: 511
+      y: 185
+    "ADVENTURE_20":
+      x: 393
+      y: 240
+    "ADVENTURE_21":
+      x: 512
+      y: 302
+    "ADVENTURE_22":
+      x: 631
+      y: 242
+    "ADVENTURE_23":
+      x: 749
+      y: 304
+    "ADVENTURE_24":
+      x: 866
+      y: 243
+    "ADVENTURE_25":
+      x: 750
+      y: 189
+    "ADVENTURE_26":
+      x: 869
+      y: 120
+    "ADVENTURE_27":
+      x: 587
+      y: 184
+    "ADVENTURE_28":
+      x: 1104
+      y: 126
+    "ADVENTURE_29":
+      x: 557
+      y: 185
+    "ADVENTURE_30":
+      x: 434
+      y: 242
+    "ADVENTURE_31":
+      x: 552
+      y: 304
+    "ADVENTURE_32":
+      x: 671
+      y: 244
+    "ADVENTURE_33":
+      x: 789
+      y: 301
+    "ADVENTURE_34":
+      x: 912
+      y: 242
+    "ADVENTURE_35":
+      x: 794
+      y: 179
+    "ADVENTURE_36":
+      x: 913
+      y: 124
